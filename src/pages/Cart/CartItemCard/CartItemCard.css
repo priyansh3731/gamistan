@@ -1,0 +1,76 @@
+.cart-card-container {
+    display: flex;
+    max-width: 600px;
+    gap: 1rem;
+    margin: 1rem auto;
+    background-color: white;
+    padding: 1rem 2rem;
+    border-radius: 1rem;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  }
+  
+  .cart-item-details > h4 {
+    margin-top: 0;
+    margin-bottom: 15px;
+  }
+  .card-card__image {
+    width: 10rem;
+  }
+  .cart-prices-container {
+    display: flex;
+    gap: 1rem;
+  }
+  .cart-card-container__old-price {
+    text-decoration: line-through;
+    color: #9ca3af;
+  }
+  .cart-card-container__current-price {
+    font-weight: bold;
+  }
+  .cart-item-discount {
+    color: #388e3c;
+    font-weight: bold;
+    font-size: 1rem;
+  }
+  .cart-item-quantity {
+    margin-top: 1rem;
+    display: flex;
+    gap: 5px;
+  }
+  
+  .remove-cart-item-btn {
+    padding: 10px;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    border-color: var(--primary-color);
+  }
+  .remove-cart-item-btn:hover {
+    cursor: pointer;
+  }
+  .cart-actions {
+    display: flex;
+    gap: 10px;
+    justify-content: space-around;
+    margin-top: 1rem;
+  }
+  .cart-add-to-wishlist-btn {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    cursor: pointer;
+    font-weight: bold;
+    padding: 10px;
+  }
+  
+  @media screen and (width<=768px) {
+    .cart-card-container {
+      justify-content: space-around;
+    }
+    .card-card__image {
+      width: 5rem;
+      object-fit: contain;
+    }
+    .cart-actions {
+      flex-direction: column;
+      gap: 0px;
+    }
+  }

@@ -1,0 +1,14 @@
+.checkout-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    min-height: 100vh;
+  }
+  @media screen and (width<=1024px) {
+    .checkout-container {
+      flex-direction: column;
+      gap: 2rem;
+      min-height: max-content;
+      margin: 0 1rem;
+    }
+  }
